@@ -6,7 +6,6 @@
 #include <iostream>
 #include <iomanip>
 #include "Entity.h"
-#include "Textures.h"
 
 using namespace std;
 
@@ -43,19 +42,16 @@ private:
 	SDL_Window* displayWindow;
 
 	//	Gravity
-	Vector gravity;
+	Vec2 gravity;
 
 	//	Mouse Motion && Screen Resolution :
-	Vector ScreenResolution;
+	Vec2 ScreenResolution;
 	float aspectRatio;
-	Vector mousePosition;
-
-	//	Textures :
-	Textures* textures;
+	Vec2 mousePosition;
 
 	//	Music & Sounds :			Mix_Music* musicName;	Mix_Chunk* soundName;
 
 	//	Entities :					Entity* entityName;		vector<Entity*> entites;
 
-	//	Game states :				enum GameState { STATE_MAINMENU, etc };		int gameState = STATE_MAINMENU;		
+	//	Game states :				enum GameState { STATE_MAINMENU, etc };		int gameState = STATE_MAINMENU;	
 };

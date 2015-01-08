@@ -1,7 +1,7 @@
 #include "Entity.h"
 
 Entity::Entity() {}
-Entity::Entity(SheetSprite sprite, Vector position, Vector scale) : sprite(sprite), position(position), scale(scale) {}
+Entity::Entity(SheetSprite sprite, Vec2 position, Vec2 scale) : sprite(sprite), position(position), scale(scale) {}
 
 /*	This function updates the Entity
 */

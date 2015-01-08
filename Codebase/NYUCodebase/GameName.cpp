@@ -3,8 +3,8 @@
 /*	This function sets up the basics for graphical displays on the screen.
 */
 GameName::GameName() {
-	ScreenResolution.x = 800;
-	ScreenResolution.y = 600;
+	ScreenResolution.x = 800.0f;
+	ScreenResolution.y = 600.0f;
 	aspectRatio = (float)ScreenResolution.x / ScreenResolution.y;
 
 	SDL_Init(SDL_INIT_VIDEO);
@@ -13,7 +13,7 @@ GameName::GameName() {
 	SDL_GL_MakeCurrent(displayWindow, context);
 
 	//--- Basic setup for the rendering pipeline
-	glViewport(0, 0, ScreenResolution.x, ScreenResolution.y);
+	glViewport(0.0f, 0.0f, ScreenResolution.x, ScreenResolution.y);
 	glMatrixMode(GL_PROJECTION);
 	glOrtho(-aspectRatio, aspectRatio, -1.0, 1.0, -1.0, 1.0);
 	glMatrixMode(GL_MODELVIEW);
@@ -88,7 +88,7 @@ bool GameName::UpdateAndRender() {
 	SDL_Event event;
 
 	while (SDL_PollEvent(&event)) {
-		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE) {
+		if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE || event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
 			done = true;
 		}
 		else if (event.type == SDL_MOUSEMOTION) {

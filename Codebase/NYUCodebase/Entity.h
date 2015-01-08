@@ -5,9 +5,9 @@
 class Entity {
 public:
 	Entity();
-	Entity(SheetSprite sprite, Vector position, Vector scale);
+	Entity(SheetSprite sprite, Vec2 position, Vec2 scale);
 
-	SheetSprite sprite;							
+	SheetSprite sprite;
 
 	//	Basic Functions
 	void Update(float elapsed);
@@ -16,10 +16,10 @@ public:
 	void FixedUpdate();
 
 	//	Variables required for SheetSprite::Draw
-	Vector position;
-	Vector scale;
+	Vec2 position;
+	Vec2 scale;
 	float rotation = 0.0f;
-	bool flipped = false;	
+	bool flipped = false;
 
 	//	Animations: must be updated in the Update function
 	float timeToComplete = 0.0f;				//	Total time we have to complete the animations	(MUST BE GIVEN)
@@ -29,5 +29,5 @@ public:
 
 	//	Collsion Detection 
 
-	enum CollisionFlags { COLLISION_TOP, COLLISION_BOTTOM, COLLISION_LEFT, COLLISION_RIGHT };						
+	enum CollisionFlags { COLLISION_TOP, COLLISION_BOTTOM, COLLISION_LEFT, COLLISION_RIGHT };
 };
