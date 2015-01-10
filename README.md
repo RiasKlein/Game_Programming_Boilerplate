@@ -13,5 +13,15 @@ Intended Software: Microsoft Visual Studios Express 2013 for Windows Desktop
   * Graphics class
 4. Textures
   * Texture container class 
-5. Vector
-  * Class for mathematical vectors
+5. Vec2 / Vec3
+  * Classes for mathematical vectors
+
+Required Links:
+1. SDL2
+  * https://www.libsdl.org/download-2.0.php
+2. SDL2_image
+  * https://www.libsdl.org/projects/SDL_image/
+3. SDL2_mixer
+  * http://www.libsdl.org/projects/SDL_mixer/
+4. glew
+  * http://glew.sourceforge.net/
