@@ -16,7 +16,8 @@ Intended Software: Microsoft Visual Studios Express 2013 for Windows Desktop
 5. Vec2 / Vec3
   * Classes for mathematical vectors
 
-Required Links:
+Required Libraries:
+
 1. SDL2
   * https://www.libsdl.org/download-2.0.php
 2. SDL2_image
