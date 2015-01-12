@@ -15,6 +15,8 @@ Intended Software: Microsoft Visual Studios Express 2013 for Windows Desktop
   * Texture container class 
 5. Vec2 / Vec3
   * Classes for mathematical vectors
+6. Font
+  * Basic font is available
 
 Required Libraries:
 
